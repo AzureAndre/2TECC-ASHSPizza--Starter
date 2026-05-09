@@ -14,7 +14,7 @@
         {% for item in cart %}
         <tr>
             <td>{{ item.name }}</td>
-            <td align="right"">${{ "%.2f"|format(item.price|float) }}</td>
+            <td align="right">${{ "%.2f"|format(item.price|float) }}</td>
             <td><a href="/RemoveFromCart/{{ item.id }}" class="btn btn-danger btn-sm">Remove</a></td>
         </tr>
         {% endfor %}

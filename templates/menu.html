@@ -9,7 +9,7 @@
     <!-- Loop through pizza inventory -->
     {% for pizza in pizzas %}
     <div class="carousel-item {% if loop.first %}active{% endif %}">
-      <img src="{{ url_for('static', filename=pizza.image) }}" alt="{{ pizza.name }}" class="d-block w-100" ">
+      <img src="{{ url_for('static', filename=pizza.image) }}" alt="{{ pizza.name }}" class="d-block w-100" >
       <div class="carousel-caption d-none d-md-block">
         <h5>{{ pizza.name }}: ${{"%.2f"|format(pizza.price|float)}}</h5>
         <p>{{ pizza.description }}</p>
