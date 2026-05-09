@@ -1,0 +1,66 @@
+/* Global styles */
+body {
+    background-color: blanchedalmond !important;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation bar styling */
+.navbar {
+    background-color: #784315 !important;
+}
+
+/* Navbar text color */
+.navbar-brand, .nav-link {
+    color: #ffffff !important;
+}
+
+/* Navbar hover effect */
+.nav-link:hover {
+    color: #4FA3FF !important;
+}
+
+/* Page headings */
+h1 {
+    color: #003A8F;
+   
+}
+
+/* Carousel text overlay styling */
+.carousel-caption {
+    background-color: rgba(0, 58, 143, 0.7);
+    border-radius: 8px;
+}
+
+/* Button styling */
+.btn {
+    background-color: #4FA3FF;
+    border: none;
+}
+
+/* Button hover effect */
+.btn:hover {
+    background-color: #003A8F;
+}
+
+/* Accordion header styling */
+.accordion-button {
+    background-color: #784315 !important;
+    color: lightgoldenrodyellow !important;
+}
+
+/* Active accordion header text color */
+.accordion-button:not(.collapsed) {
+    color: burlywood !important;
+}
+
+/* Carousel sizing */
+.carousel {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
+
+
+
+

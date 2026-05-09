@@ -1,0 +1,32 @@
+
+{% extends 'base.html' %} {% block content %}
+<h1>Cart Contents</h1>
+{% if cart %}
+<table class="table">
+    <thead>
+        <tr>
+            <th>Item Name</th>
+            <th>Price</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in cart %}
+        <tr>
+            <td>{{ item.name }}</td>
+            <td align="right"">${{ "%.2f"|format(item.price|float) }}</td>
+            <td><a href="/RemoveFromCart/{{ item.id }}" class="btn btn-danger btn-sm">Remove</a></td>
+        </tr>
+        {% endfor %}
+        <tr>
+            <td><strong>Total:</strong></td>
+            <td align="right">${{ "%.2f"|format(cart|map(attribute='price')|map("float")|sum) }}</td>
+            <td><a href="/checkout" class="btn btn-success">Place Order</a></td>
+        </tr>
+    </tbody>
+</table>
+{% else %}
+<p>Your cart is empty.</p>
+{% endif %}     
+
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends 'base.html' %} {% block content %}
+<!-- Home page welcome section -->
+<h1 style="text-align: center;">Welcome to ASHS Pizza</h1>
+<p style="text-align: center;">Delicious pizzas for ASHS students and staff</p>
+<div style="text-align: center;">   
+    <img src="{{ url_for('static', filename='images/ASHSPizzaLogo.png') }}" alt="ASHS Pizza Logo" width="60%" height="60%">
+    <br><br>
+    <hr>
+    <a href="/menu" class="btn btn-primary">View Menu</a>
+    <a href="/cart" class="btn btn-primary">View Cart</a>
+</div>
+<hr>
+{% endblock %}

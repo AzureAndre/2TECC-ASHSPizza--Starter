@@ -1,0 +1,12 @@
+{% extends 'base.html' %} {% block content %}
+<!-- Home page welcome section -->
+<h1 style="text-align: center;">Yipee!</h1>
+<p style="text-align: center;">Ahh, you did it!</p>
+<div style="text-align: center;">   
+    <img src="{{ url_for('static', filename='images/checkedout.gif') }}" alt="yipee" width="60%" height="60%">
+    <br><br>
+    <hr>
+    <p>Thank you for your order! We will have it ready for you during lunch break on school days.</p>
+</div>
+<hr>
+{% endblock %}
