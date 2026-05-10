@@ -4,20 +4,9 @@
 <h1>Our Pizzas</h1>
 
 <!-- Image carousel displaying pizzas -->
-<div id="pizzaCarousel" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner" >
-    <!-- Loop through pizza inventory -->
-    {% for pizza in pizzas %}
-    <div class="carousel-item {% if loop.first %}active{% endif %}">
-      <img src="{{ url_for('static', filename=pizza.image) }}" alt="{{ pizza.name }}" class="d-block w-100" >
-      <div class="carousel-caption d-none d-md-block">
-        <h5>{{ pizza.name }}: ${{"%.2f"|format(pizza.price|float)}}</h5>
-        <p>{{ pizza.description }}</p>
-        <a href="/AddToCart/{{ pizza.id }}" class="btn btn-primary">Add to Cart</a>
-      </div>
-    </div>
-    {% endfor %}
-  </div>
+ <!-- TODO: Add carousell what will list all of the pizzas with images.  It should display the name price and description
+            There should also be a button that will add the pizza to the cart -->
+
 
   <!-- Navigation buttons -->
   <button class="carousel-control-prev" type="button" data-bs-target="#pizzaCarousel" data-bs-slide="prev">

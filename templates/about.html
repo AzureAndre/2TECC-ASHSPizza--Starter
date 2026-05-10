@@ -1,47 +1,24 @@
 {% extends 'base.html' %} {% block content %}
-<div class="accordion" id="accordionExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        Contact details
-      </button>
-    </h2>
-    <div id="collapseOne" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
-      <div class="accordion-body">
+<!-- TODO: Add an accordion that will have the contact details, story and location and hours of the pizza place.  
+     Each section should be collapsable and only one section should be open at a time.
+ -->
+
         <strong>Contact Details for ASHS Pizza.</strong> 
         <p>
             Email: info@ashspizza.co.nz
             <br>
             Phone: 021 123 123
         </p>
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        Our Story
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
+
+
         <strong>From Impact Project to School Legend</strong> 
         <p>It all started as an Impact Project at Albany Senior High School — one of those wild ideas that began with a simple question: “What if we could make lunch more awesome?”</p>    
         <p>A group of students noticed that everyone loved pizza days, but they wanted something that felt theirs — made by students, for students. So they pitched ASHS Pizza, a project that would combine business, design, and culinary creativity.</p>
         <p>They began by experimenting in the school kitchen, testing dough recipes between classes and designing logos in the art room. The tech students built a website, the business students handled pricing and marketing, and the food tech crew perfected the toppings.</p>
         <p>Soon, the project grew into a full-blown student enterprise. The slogan “Slice of School Spirit!” captured what it was all about — teamwork, creativity, and a dash of fun.</p>
         <p>Today, ASHS Pizza isn't just about food; it's a symbol of what happens when students take an idea, bake it with passion, and serve it to the whole community</p>
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        Location and Hours
-      </button>
-    </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
+
+
         <strong>Location and Hours</strong>
         <p><strong>Hours:</strong> During lunch break on schoold days</p>
         <p>12.40pm - 1.30pm - Please order in advance to avoid the queue</p>
@@ -51,9 +28,4 @@
             <img src="{{ url_for('static', filename='images/Map.png') }}" alt="Map to ASHS Pizza" width="66%" height="66%">
             </a>
         </center>
-      </div>
-    </div>
-  </div>
-</div>
-
 {% endblock %}

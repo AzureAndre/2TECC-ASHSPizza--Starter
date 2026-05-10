@@ -18,35 +18,9 @@
   </head>
   <body>
     <!-- Navigation bar - displayed on all pages -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="/"><img src="{{ url_for('static', filename='images/PizzaIcon.png') }}" alt="ASHS Pizza Logo" width="50" height="50"></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/menu">Menu</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/cart">Cart</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/about">About Us</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+     <!-- TODO: Add a navigation bar that will be displayed on all pages.  
+           It should have the logo on the left and links to the menu, cart and about us pages on the right.
+     -->
 
     <!-- Main content area - injected by child templates -->
     <div class="container mt-4">{% block content %}{% endblock %}</div>
